@@ -1,29 +1,15 @@
 body {
-    font-family: 'Lobster', cursive; /* Change to a romantic cursive font */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Change to a romantic cursive font */
     background-color: #ffdde1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
     margin: 0;
-    background: url('images/image.jpg') repeat;
+    background: url('images/jazmin.jpeg') repeat;
     font-size: 35px;
-    color: rgb(255, 0, 174);
+    color: rgb(255, 255, 255);
 }
-.hh{
-    -webkit-text-stroke: 2px #71004f;
-    font-weight:900;
-
-}
-.pp{
-    -webkit-text-stroke: 2px #71004f;
-
-    font-size: 50px;
-    font-style: oblique;
-    font-weight: 800;
-}
-
-body
 
 .container {
     width: 100%;
@@ -35,15 +21,34 @@ body
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in;
+}
+
+/* Fade in animations for the mian container */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hh{
+    -webkit-text-stroke: 2px #71004f;
+    font-weight:900;
 }
 
 .image{
-    height: 280px;
-    
+    height: 300px;
+}
+
+.pp{
+    -webkit-text-stroke: 2px #71004f;
+
+    font-size: 50px;
+    font-style:italic;
+    font-weight: 800;
 }
 
 .buttons button {
-    background-color: #ff4d79;
+    background-color: #2f1152;
     color: #fff;
     padding: 10px 30px;
     border: none;
@@ -53,22 +58,17 @@ body
     cursor: pointer;
     position: relative;
     font-family: 'Lobster', cursive; /* Change to a romantic cursive font */
-
+    
 }
 
 .buttons button:hover {
-    background-color: #7c1f37;
-
+    background-color: hsl(265, 100%, 49%);
 }
 
 .buttons{
     display: flex;
     justify-content: center;
     flex-direction: row;
-}
-
-#no-button{
-    
 }
 
 .hidden-message {
